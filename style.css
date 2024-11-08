@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.items{
+  display: flex;
+  list-style: none;
+  padding: 8px;
+  width: 100%;
+  font-size: 20px;
+  gap: 50px;
+  /* justify-content: space-around; */
+  position: fixed;
+  padding-left: 30%;
+  /* border: 2px solid white; */
+  z-index: 40;
+  background-image: url(./assests/bg2.png);
+  background-size: cover;
+  height: 50px;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.hero {
+ width: 100%;
+  height: 100vh;
+  background: url(./assests/bg2.png);
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.logo {
+  max-height: 190px;
+}
+/* .head{
+  position: fixed;
+} */
+/* nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+  
+} */
+ div ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+ div ul li a:hover {
+  color: #fd4766;
+}
+div ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+div ul li a:hover:after {
+  width: 100%;
+} 
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn:hover {
+  background:transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  color: #0a0a0a;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 100%;
+}
+.content h1 span {
+  color: #fd4766;
+}
+.content p {
+  width: 90%;
+  color: #202020;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.home{
+  margin: 25px 0 40px;
+}
+.home a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background:transparent;
+   border: 2px solid black;
+   border-radius: 50%;
+   font-size: 20px;
+   color: black;
+   text-decoration: none;
+   margin-left: 12px;
+   transition: all 0.4s;
+}
+
+.home a:hover{
+  background:#fd4766;
+  color: white;
+  border-color: #fd4766;
+  box-shadow: 0 0 10px #fd4766;
+}
+/*------------------about-------------*/
+#About{
+  padding-bottom: 50px;
+  margin-top: 10px;
+  background-image: url(./assests/bg2.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+.about{
+  padding: 10px ;
+  color: #0a0a0a;
+}
+.row{
+  display:flex ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1{
+  flex-basis: 40%;
+  animation: floatimage 4s ease-in-out infinite;
+  overflow: hidden;
+}
+@keyframes floatimage{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-2.4rem);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+.about-col-1 img{
+  width: 65%;
+  border-radius: 15px;
+  clip-path: circle();
+ margin-left: 30px;
+ margin-top: 100px;
+
+}
+/* .about-col-1 img:hover{
+  width: 67%;
+  transition:transform 0.3s ease;
+}  */
+
+.about-col-2{
+  margin-top: 0px;
+  flex-basis: 60%;
+}
+.about-col-2 h1{
+  padding-top: 10px;
+}
+.about-col-2 p{
+  margin-top: 20px;
+}
+.timeline {
+  position: relative;
+  padding: 10px;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -40px;
+  top: 0;
+  /* font-weight: bold; */
+  color: #007BFF;
+}
+
+.timeline-content {
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid white;  
+}
+.timeline-content:hover{
+  transform: translateY(-10px);
+  transition:transform 0.3s ease;
+   background-color:white;
+   color: black;
+   cursor: pointer;
+  }
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 10px;
+  height: 10px;
+  background: #007BFF;
+  border-radius: 50%;
+}
+/*------------------projects-------------*/
+#projects{
+  padding-bottom: 50px;
+  margin-top: 10px;
+  background-image: url(./assests/bg2.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.proj{
+  display: flex;
+  padding: 50px;
+  
+}
+.proj1
+{
+  border: 2px solid white ;
+  /* background-color: white; */
+  gap: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+.proj1:hover{
+  /* box-shadow: #1c99fe; */
+  box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+  transition:transform 0.3s ease;
+  /* transition: all ease-in-out 0.2s; */
+  background-color: white;
+}
+h1{
+  text-align: center;
+  padding-top: 50px;
+  
+}
+h5{
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+  color: #fd4766;
+}
+.para{
+  padding: 5px;
+  margin: 10px;
+  text-indent: 50px;
+  background: transparent; 
+
+}
+
+/*------------------skills-------------*/
+#Skills{
+  /* padding-bottom: 50px; */
+  margin-top: 10px;
+  background-image: url(./assests/bg2.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.skills{
+  margin-top: 80px;
+  display: flex;
+}
+.container{
+    /* margin: 2px 0 0px 20px; */
+    /* background-color: skyblue; */
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: last baseline;
+    margin-bottom: 100px;
+    padding-left: 30px;
+  }
+  .tech{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+  .tech:hover{
+    color: #fd4766;
+  }
+  .tech1{
+    display: inline-block;
+    margin-left: 550px;
+    margin-top: 50px;
+  }
+  .tech1:hover{
+    color: #fd4766;
+  }
+  .container img{
+    width: 20%;
+    height: 90%;
+    object-fit:cover;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px #333;
+    transition: all ease-in-out 0.5s;
+  }
+  .container img:hover{
+    width:35% ;
+  }
+  .container1{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: last baseline;
+    margin-bottom: 100px;
+    padding-left: 30px;
+  }
+  .container1 img{
+    width: 20%;
+    height: 90%;
+    object-fit:cover;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 0 10px #333;
+    transition: all ease-in-out 0.5s;
+  }
+  .container1 img:hover{
+    width:35% ;
+    /* transform: scale(1,1); */
+  }
+  
+/*------------------contact-------------*/
+#Contact{
+  padding-bottom: 50px;
+  margin-top: 10px;
+  background-image: url(./assests/bg2.png);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.contact-container {
+  /* background-color: #fff; */
+  padding: 70px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 50%;
+  padding: 15px;
+  margin: 10px 25% 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #fd4766;
+  box-shadow: 0 0 8px rgba(253, 71, 102, 0.5);
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  background-color: #fd4766;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #47FDAE;
+  transform: translateY(-3px);
+}
+
+/* Animation for fade-in effect */
+/* @keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+} */
+ footer{
+  background-color: #1d1d24;
+  color: #fff; 
+  padding: 20px;
+  text-align: center;
+ }
+
+ /* --------------media query-------- */
+ @media (max-width: 768px) {
+ 
+  .content .title{
+    font-size: 4px;
+    background-image: url(./assests/bg2.png);
+    background-size: auto;
+  }
+  .content h1{
+   font-size: 20px;
+  }
+  .content p{
+    font-size: 10px;
+    width: 100%;
+  }
+ }
